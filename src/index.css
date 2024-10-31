@@ -1,3 +1,20 @@
+:root {
+  --light-bg-color: #FAFAFA;
+  --light-text-color: #000;
+  --light-quote-bg-color: rgba(82, 134, 223, 0.15);
+  --light-scrollbar-track-color: #eeeeee;
+  --light-scrollbar-thumb-color: #cccccc;
+  --light-overlay-color: #f5f5f5;
+
+  --dark-bg-color: #0e1111;
+  --dark-text-color: #fff;
+  --dark-quote-bg-color: rgba(82, 134, 223, 0.15);
+  --highlight: #5286df;
+  --dark-scrollbar-track-color: #0e1111;
+  --dark-scrollbar-thumb-color: #121617;
+  --dark-overlay-color: #121617;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -10,4 +27,63 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+body {
+  width: 600px;
+  margin: auto;
+}
+li {
+  list-style-type: none;
+  position: relative;
+  padding-bottom: 10px;
+}
+li::before {
+  content: "-";
+  position: absolute;
+  left: -1em; 
+}
+
+h1 { 
+  font-size: 46px; 
+}
+h2 {
+  font-size: 20px;
+}
+h3 {
+  font-size: 16px;
+}
+
+a, a:visited, #mail { 
+  color: var(--highlight); 
+}
+a:not(#back):not(#connect) {
+  position: relative;
+  width: min-content;
+  white-space: nowrap;
+}
+a:not(#back):not(#connect)::before {  
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  background: hsl(200, 100%, 80%);
+  z-index: -1;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.3s ease;
+}
+a:not(#back):not(#connect):hover::before {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+
+
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: var(--dark-bg-color);
+    color: var(--dark-text-color);
+  }
 }

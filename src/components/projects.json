@@ -1,0 +1,40 @@
+{
+    "projects": [
+      {
+        "id": 1,
+        "title": "Arbitrage Trader",
+        "desc": "This project currently scrapes sportsbooks for UFC/MMA and NFL games, analyzing whether arbitrage opportunities exist in upcoming matches. I am actively seeking to expand the number of sportsbooks and sports covered, as well as automating the scraping process for greater efficiency.",
+        "img": "https://placekitten.com/600/300"
+      },
+      {
+        "id": 2,
+        "title": "Social Crawler",
+        "desc": "Social crawler is a tool that can be setup to run server side to track a users digital footprint. I was inspired by the sherlock project to create a tool to retrieve metrics from a users social media account. This project scrapes user information such as followers, following, likes, posts, bio, location, and age, without the use of API. Social crawler utilizes Selenium, Helium, and HTTP GET requests to retrieve user information from Facebook, Instagram, TikTok, and Twitter.",
+        "img": "https://placekitten.com/800/601"
+      },
+      {
+        "id": 3,
+        "title": "AI Playlist",
+        "desc": "The Playlist Generator prompts the user for songs and uses Spotify's WEB API to generate a similar catalog of songs. The Playlist Generator utilizes open ai's engine Davinci-003 to generate a prompt using natural language for Open AI image generator DALL-E. Using the prompt from Davinci-003, the web app generates a unique playlist cover that reflects the music.",
+        "img": "https://placekitten.com/800/601"
+      },
+      {
+        "id": 4,
+        "title": "Mouse Heatmap",
+        "desc": "The mouse heatmap is a tool that can be used to track critical information to visualize what users are interacting with on your page to better understand engagement of site. This lightweight application can be setup to be run server side. It stores an array of mouse points and plays a heatmap of the user's mouse movements. Additionally, it returns a JSON object including the mouse points, clicks, and time on and away from page.",
+        "img": "https://placekitten.com/800/601"
+      },
+      {
+        "id": 5,
+        "title": "Sample Project 2",
+        "desc": "This script is intended to improve network speed by setting system DNS to cloudflares DNS resolver. This script performs various network performance tests such as speed test, packet loss test, throughput test, latency test, DNS resolution test, server response test, and bandwidth test. It then allows the user to change their DNS settings and performs the tests again to compare the results.",
+        "img": "https://placekitten.com/800/601"
+      },
+      {
+        "id": 6,
+        "title": "Tor Scout",
+        "desc": "Developed a bot that scrapes onion links on the Tor network, extracting HTML and cached assets for local storage, utilizing Tor proxies to maintain anonymity.",
+        "img": "https://placekitten.com/800/601"
+      }
+    ]
+  }
